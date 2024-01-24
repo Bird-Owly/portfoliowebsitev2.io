@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bird's Portfolio - Learn About Bird</title>
+  <style>
+
+  h1{
+    position: absolute;
+    display: inline-block;
+    top: 90px;
+    margin-left: 60px;
+    font-size: 80px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 750;
+    z-index: 50;
+    color: white;
+  } 
+
+  #underline1{
+      margin-left: -210px;
+      top: 70px;
+      position: absolute;
+      width: 1200px;
+      height: 600px;
+      z-index: 30;
+    }
+
+    #underline2{
+      margin-left: 370px;
+      top: 170px;
+      position: absolute;
+      width: 500px;
+      height: 250px;
+      z-index: 30;
+      transform: rotate(90deg);
+    }
+
+    #xperienceoverviewimage{
+      margin-left: 115px;
+      top: 320px;
+      position: absolute;
+      width: 340px;
+      height: 170px;
+      z-index: 30;
+    }
+
+    #experienceoverviewtext{
+      margin-left: 140px;
+      top: 325px;
+      position: absolute;
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+      font-family: Helvetica, sans-serif;
+      z-index: 20;
+    }
+
+    #introimage{
+      margin-left: 650px;
+      top: 100px;
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      z-index: 30;
+      border-style: solid;
+      border-radius: 250px;
+      outline-style: dashed;
+      outline-width: 5px;
+      outline-color: rgb(102, 96, 65);
+      border-width: 7.5px;
+      border-color: white;
+    }
+
+
+
+    body{
+      background-color: rgb(20, 19, 19);
+      background-attachment: scroll;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      align-items: center;
+      width: 100%;
+      height: 3300;
+      z-index: 0;
+      padding: 4px;
+    }
+
+    #introparagraph{
+      text-align: center;
+      position: absolute;
+      display: inline-block;
+      top: 375px;
+      margin-left: 60px;
+      z-index: 2;
+      font-size: 13px;
+      font-family: Helvetica, sans-serif;
+      font-weight: 500;
+      color: white;
+    }
+
+    #aboutheader{
+      text-align: center;
+      position: absolute;
+      display: inline-block;
+      margin: 425px;
+      top: 320px;
+      z-index: 200;
+      font-size: 75px;
+      font-family: Helvetica, sans-serif;
+      font-weight: 600;
+
+    }
+
+    #aboutparagraph{
+      text-align: center;
+      position: absolute;
+      display: inline-block;
+      margin-left: 110px;
+      top: 820px;
+      z-index: 200;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: Helvetica, sans-serif;
+      width: 800px;
+
+    }
+
+    #coverimage{
+      display: inline-block;
+      position: absolute;
+      width: 1000px;
+      height: 500px;
+      top: 30px;
+      margin-left: 400px;
+      z-index: 10;
+    }
+
+    #code1{
+      display: inline-block;
+      position: absolute;
+      width: 1000px;
+      height: 500px;
+      top: 0px;
+      left: 0px;
+      z-index: 2;
+      filter: blur(7.5px);
+    }
+
+    #code2{
+      display: inline-block;
+      position: absolute;
+      width: 1000px;
+      height: 500px;
+      top: 30px;
+      margin-left: 500px;
+      z-index: 2;
+      filter: blur(5px)
+    }
+
+    #code3{
+      display: inline-block;
+      position: absolute;
+      width: 1000px;
+      height: 500px;
+      top: 110px;
+      margin-left: 300px;
+      z-index: 2;
+      filter: blur(0.5px)
+    }
+
+    #experienceheader{
+      text-align: center;
+      position: absolute;
+      display: inline-block;
+      top: 1350px;
+      margin-left: 100px;
+      z-index: 7;
+      background-color: white;
+      border-radius: 10px;
+      border-color: rgb(123, 181, 84);
+      border-style: solid;
+      border-width: 5px;
+      font-size: 80px;
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+      padding: 5px;
+
+
+    }
+
+    #experienceimagething{
+      position: absolute;
+      display: inline-block;
+      top: 1700px;
+      margin-left: 100px;
+      z-index: 10;
+      border-radius: 30px;
+      border-color: rgb(123, 181, 84);
+      border-style: solid;
+      border-width: 5px;
+
+    }
+
+    #photoimage{
+      position: absolute;
+      display: inline-block;
+      top: 700px;
+      margin-left: 925px;
+      width: 300px;
+      height: 300px;
+      z-index: 14;
+      border-radius: 30px;
+      border-color: rgb(123, 181, 84);
+      border-style: solid;
+      border-width: 5px;
+
+    }
+
+    #projectsandworkheader{
+      text-align: center;
+      position: absolute;
+      display: inline-block;
+      top: 2250px;
+      margin-left: 100px;
+      z-index: 20;
+      background-color: white;
+      border-radius: 10px;
+      border-color: rgb(37, 91, 176);
+      border-style: solid;
+      border-width: 5px;
+      font-size: 80px;
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+      padding: 5px;
+
+    }
+
+    #projectsandworkimage{
+      position: absolute;
+      display: inline-block;
+      top: 2500px;
+      margin-left: 145px;
+      width: 300px;
+      height: 300px;
+      z-index: 14;
+      border-radius: 30px;
+      border-color: rgb(123, 181, 84);
+      border-style: solid;
+      border-width: 5px;
+      width: 1000px;
+      height: 500px;
+      scroll-behavior: smooth;
+
+    }
+
+    #projectsandworklinks{
+
+      text-align: center;
+      position: absolute;
+      display: inline-block;
+      top: 3000px;
+      margin-left: 0px;
+      z-index: 20;
+      background-color: white;
+      border-radius: 10px;
+      border-color: rgb(37, 91, 176);
+      border-style: solid;
+      border-width: 5px;
+      font-size: 25px;
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+      padding: 5px;
+      width: 1200px;
+      height: auto;
+
+    }
+
+    #contactsbox{
+      position: absolute;
+      display: inline-block;
+      top: 3250px;
+      bottom: 0px;
+      width: 1250px;
+      height: 625px;
+      z-index: 14;
+      left: 5px;
+    }
+
+    #backgroundpc{
+      top: -15px;
+      right: 0px;
+      display: inline-block;
+      position: absolute;
+      width: 1250px;
+      height: 625px;
+      z-index: 3;
+      filter: blur(3.5px);
+
+    }
+
+    #whitesquare1{
+      margin-left: -20px;
+      top: 680px;
+      position: absolute;
+      width: 5000px;
+      height: 3200px;
+      z-index: 5;
+
+    }
+
+  </style>
+</head>
+<body>
+  <section id="welcomesection">
+    <img id="xperienceoverviewimage" src="https://cdn.discordapp.com/attachments/1193295349444530297/1199159425806635098/afhaiasdh_1.png?ex=65c1873e&is=65af123e&hm=f4778b21834837840b47613bd845d56b636e7cfae265d1297c0761b5cc69105f&">
+    <img id="coverimage" src="https://cdn.discordapp.com/attachments/1193319847271075850/1199530656041025607/Background_Image_4.png?ex=65c2e0fa&is=65b06bfa&hm=519046aad56140e0e32a44d1493cad1facb406382dcbff3ebec7aea19f53928f&">
+    <img id="backgroundpc" src="https://cdn.discordapp.com/attachments/1193319847271075850/1199529475440906261/Background_Image_3.png?ex=65c2dfe1&is=65b06ae1&hm=7962505eee13dd6d55e11decb72f9933f1b76a2185bcd2e9ab9b89d365ffe319&">
+    <img id="code1" src="https://media.discordapp.net/attachments/1193319847271075850/1199185402473484308/afhaiasdh_3.png?ex=65c19f6f&is=65af2a6f&hm=69cb0b7c7ad1699f7bae0d308be5255d7363f60975e721e9647800d6c1ce4fcd&=&format=webp&quality=lossless&width=1326&height=663">
+    <img id="code2" src="https://cdn.discordapp.com/attachments/1193319847271075850/1199185632031940650/afhaiasdh_7.png?ex=65c19fa6&is=65af2aa6&hm=f5357eb1f41463fbbb240ab23b3509ff1a80db9cbe91ea811c53b91ffebd783e&">
+    <img id="underline1" src="https://media.discordapp.net/attachments/1193319847271075850/1199532630425751673/Background_Image_5.png?ex=65c2e2d1&is=65b06dd1&hm=e7d84a95cee46ab9da2f5ccd3038b9139f814468107ff9f063c1304e39c29e46&=&format=webp&quality=lossless&width=1326&height=663">
+  <h1>Welcome<br>to the Portfolio</h1>
+  </section>
+  <section id="aboutsection">
+    <img id="whitesquare1" src="https://cdn.discordapp.com/attachments/1193319847271075850/1199534994742321182/Background_Image_6.png?ex=65c2e505&is=65b07005&hm=99a547693d6783bbea5468505408c5a3edc98314e72cc52fea71ca6db8fed835&">
+  <h2 id="aboutheader">About Me</h2>
+  <p id="aboutparagraph">Hello! My name is Bird_Owly. I also go by baddiebirdqueen on Discord. Usually, people just call me Bird. I am 14 years old, and I recently entered the programming world. I mainly do programming in JavaScript and CSS.<br><br>I have experience in programming (JavaScript mainly), 3-d modelling (in Roblox Studio), graphics designing, drawing (in Canva), and video editing (in Premier Pro and After Affects).<br><br>During my free time, I mainly play Roblox, program, draw/design, read, or do other stuff. I am usually online during the weekend at all times and in the afternoon during weekdays.<br><br>This is my first ever website and is currently in progress.<br><br>Scroll down to view my experience!</p>
+  <img id="photoimage" src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-26990783FE82A06913EF17CC77736727-Png/420/420/AvatarHeadshot/Png/isCircular">
+  </section>
+  <section id="experiencesection">
+    <h3 id="experienceheader">Programming Experience</h3>
+    <img id="experienceimagething" src="https://cdn.discordapp.com/attachments/1193295349444530297/1197379946121809960/Proficiency.png?ex=65bb0df9&is=65a898f9&hm=4099bfe003f04f6f4cc8f69dff4d958b7031f8d2cbf743e536617a9981dac1b5&">
+  </section>
+  <section id="projectsection">
+    <h4 id="projectsandworkheader">Projects and Previous Work</h4>
+    <img id="projectsandworkimage" src="https://cdn.discordapp.com/attachments/1193295349444530297/1197389440805511268/Proficiency_1.png?ex=65bb16d1&is=65a8a1d1&hm=9313fba69c35e2b5265c53941a394a20f3ca835770b82cb6b38d9b1062649df4&">
+    <p id="projectsandworklinks">Links to videos of the bots can be found below:<br><br>https://drive.google.com/drive/folders/1Sb2-EV_IPSUSUblvkQyypu0lgvayF5TB?usp=drive_link</p>
+  </section>
+  <section id="contacts">
+    <img id="contactsbox" src="https://cdn.discordapp.com/attachments/1193319847271075850/1199193504132366396/afhaiasdh_8.png?ex=65c1a6fb&is=65af31fb&hm=c41a595e79ea15c15dd8586d73990e86506d8160e1f1f30019d153321e48b2f4&">
+  </section>
+</body>
+</html>
